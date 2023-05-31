@@ -1,19 +1,19 @@
 # Jet CMS DAS Exercise
 
-## CMS DAS January  2023
+## CMS DAS June  2023
   
 ### Introduction
 This tutorial is intended to provide you with the basic you need in order to deal with jets in your analysis. We start with the basics of what is a jet, how are they reconstructed, what algorithms are used, etc. Then we give examples with scripts on how to access jets and use them in your analysis frameworks, including corrections and systematics. In the second part of the exercise, we examine jet substructure algorithms, which have many uses including identification of hadronic decays of heavy SM particles like top quarks, W, Z, and H bosons, as well as mitigation of pileup and others.
 
-The tutorial is designed to be executed at cmslpc and followed in the JMEDAS 2023 twiki page, where you find links to instructional slides and (read-only) notebooks that walk you through the exercises.
+The tutorial is designed to be executed at lxplus and followed in the JMEDAS 2023 twiki page, where you find links to instructional slides and (read-only) notebooks that walk you through the exercises.
 
-## Run exercises in cmslpc
+## Run exercises in lxplus
 
-Open a terminal/console, connect to cmslpc-sl7 and prepare your working area (instructions are in bash shell syntax):
+Open a terminal/console, connect to lxplus and prepare your working area (instructions are in bash shell syntax):
 
 ```
 kinit username@FNAL.GOV
-ssh -Y username@cmslpc-sl7.fnal.gov
+ssh -Y username@lxplus.cern.ch
 mkdir JMEDAS2023
 cd JMEDAS2023
 
@@ -23,7 +23,7 @@ cmsrel CMSSW_10_6_18
 cd CMSSW_10_6_18/src
 cmsenv
 
-git clone https://github.com/juska/JMEDAS.git Analysis/JMEDAS
+git clone https://github.com/AndrissP/JMEDAS.git Analysis/JMEDAS
 git clone https://github.com/cms-jet/JetToolbox Analysis/JetToolbox -b jetToolbox_102X_v3
 cd Analysis/JMEDAS
 scram b -j 4
@@ -46,6 +46,7 @@ Now you can go back to the TWiki page and start with the basics in Section 1.
 ## Additional Information & Resources
 
   - [JERC Subgroup Twiki Page](https://twiki.cern.ch/twiki/bin/view/CMS/JetEnergyScale)
+  - [The new run 3 JERC subgroup webpage](https://cms-jerc.web.cern.ch/)
     - [JEC and JER Reference Sample Page](https://twiki.cern.ch/twiki/bin/view/CMS/JERCReference)
     - [WorkBook Page on Jet Energy Corrections](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookJetEnergyCorrections?redirectedfrom=CMS.WorkBookJetEnergyCorrections)
     - [WorkBook Page on Jet Energy Resolution](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookJetEnergyResolution)
