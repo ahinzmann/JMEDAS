@@ -12,14 +12,13 @@ The tutorial is designed to be executed at lxplus and followed in the JMEDAS 202
 Open a terminal/console, connect to lxplus and prepare your working area (instructions are in bash shell syntax):
 
 ```
-kinit username@FNAL.GOV
-ssh -Y username@lxplus.cern.ch
+ssh -Y <username>@lxplus.cern.ch
 mkdir JMEDAS2023
 cd JMEDAS2023
 
 export SCRAM_ARCH=slc7_amd64_gcc700
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-cmsrel CMSSW_10_6_18
+scramv1 -n CMSSW10618_JMEDAS  CMSSW_10_6_18   ### choose an appropriate directory name instead of `CMSSW10618_JMEDAS`
 cd CMSSW_10_6_18/src
 cmsenv
 
