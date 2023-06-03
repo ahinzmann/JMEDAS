@@ -27,7 +27,7 @@ This version of the same tutorial uses Jupyer Notebooks as a browser-based devel
 ### Setup
 Go to [https://swan.cern.ch](https://swan.cern.ch) and log in with your CERN account. After that you need to configure your environment, please use these settings:
 
-[add image]
+![add image](images/SWAN_configenv.png)
 
 The most important configuration is the software stack, which has to be ```97a Python2```. After that click on start the session.
 Once you are in ```My Projects```, create a new project by clicking on the plus icon on the right part of ```My Projects```. Enter the project name you like, for this example we will use CMSDAS_jetExercise.
@@ -35,7 +35,7 @@ Once you are in ```My Projects```, create a new project by clicking on the plus 
 ## Checkout the code
 Open up a terminal by clicking on the icon:
 
-[add image]
+![add image](images/SWAN_terminal.png)
 
 Once there, you are in your cernbox home area, and you can follow these steps:
 
