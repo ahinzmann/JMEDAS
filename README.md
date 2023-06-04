@@ -66,9 +66,8 @@ voms-proxy-init -voms cms -valid 192:00
 ```
  * *SWAN* still does not have a simple way of setting this certificate internally, but we can use a workaround. First, open a "normal" connection to lxplus/cmslpc from your computer (NOT from the SWAN command line), execute `voms-proxy-init -voms cms -valid 192:00` and look at the prints. Your certificate is located in a file with a name like this: `/tmp/x509up_u00000`(lxplus) `~/x509up_u00000`(cmslpc) (with some other numbers instead of 0000). If the location is not printed out (on cmslpc), you can run `echo $X509_USER_PROXY` to find the location. Copy it to your cernbox area like this:
 ```bash
-scp $X509_USER_PROXY Y@lxplus.cern.ch:/eos/home-X/Y/    ###  (from cmslpc) where X is the first letter of your cern user id, and Y is your cern user id.
-#scp ~/x509up_u0000  Y@lxplus.cern.ch:/eos/home-X/Y/    ###  (from cmslpc) where ~/x509up_u0000 needs to be adapted to explicitly point to your personally created proxy file, X is the first letter of your cern user id, and Y is your cern user id.
-#cp /tmp/x509up_u0000  /eos/home-X/Y/    ###  (from lxplus) where X is the first letter of your cern user id, and Y is your cern user id.
+cp /tmp/x509up_u0000  /eos/home-X/Y/    ###  (on lxplus) where X is the first letter of your cern user id, and Y is your cern user id. `~/x509up_u0000` has to be replaced to the location of the created proxy.
+#scp $X509_USER_PROXY Y@lxplus.cern.ch:/eos/home-X/Y/    ###  (from cmslpc) where X is the first letter of your cern user id, and Y is your cern user id.  `~/x509up_u0000` has to be replaced to the location of the created proxy.
 ```
 Now you are ready to activate your certificate in jupyter notebooks in SWAN by first changing the second line of the cell with the location of your certificate file, and then running (i.e. clicking 'play' in) a cell that looks like this:
 ```python
