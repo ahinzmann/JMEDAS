@@ -72,7 +72,7 @@ cd JMEDAS2023
 export SCRAM_ARCH=slc7_amd64_gcc700
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 scramv1 -n CMSSW10618_JMEDAS  CMSSW_10_6_18   ### choose an appropriate directory name instead of `CMSSW10618_JMEDAS`
-cd CMSSW_10_6_18/src
+cd CMSSW10618_JMEDAS/src
 cmsenv
 
 git clone https://github.com/AndrissP/JMEDAS.git Analysis/JMEDAS
@@ -86,14 +86,14 @@ In some exercises we also need to access files in remote servers, so activate yo
 voms-proxy-init -voms cms -valid 192:00
 ```
 
-If you like seeing your working directory in the commandline, you can do also this by adding a line to ~/.bashrc and activating it with the 'source' command:
+_Optional_. If you like seeing your working directory in the commandline, you can do also this by adding a line to ~/.bashrc and activating it with the 'source' command:
 
 ```
 echo "PS1='\W\$ '" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Now you can go back to the TWiki page and start with the basics in Section 1.
+Now, you can start with the `basics.py` script in Section 1.
 
 ## Additional Information & Resources
 
