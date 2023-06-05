@@ -65,7 +65,7 @@ voms-proxy-init -voms cms -valid 192:00
 cp /tmp/x509up_u0000  /eos/home-X/Y/    ###  (on lxplus) where X is the first letter of your cern user id, and Y is your cern user id. `~/x509up_u0000` has to be replaced to the location of the created proxy.
 #scp $X509_USER_PROXY Y@lxplus.cern.ch:/eos/home-X/Y/    ###  (from cmslpc) where X is the first letter of your cern user id, and Y is your cern user id.  `~/x509up_u0000` has to be replaced to the location of the created proxy.
 ```
-Now you are ready to activate your certificate in jupyter notebooks in SWAN by first changing the second line of the cell with the location of your certificate file, and then running (i.e. clicking 'play' in) a cell that looks like this:
+Now you are ready to activate your certificate in jupyter notebooks in SWAN by first changing the second line (User proxy location, you just copied it to  /eos/home-X/Y/  in the previous step) of the cell with the location of your certificate file, and then running (i.e. clicking 'play' in) a cell that looks like this:
 ```python
 import os
 os.environ['X509_USER_PROXY'] = '{}/x509up_00000'.format(os.environ["HOME"])   ### remember to change this line with what you did above
@@ -76,7 +76,7 @@ else:
 os.environ['X509_CERT_DIR'] = '/cvmfs/cms.cern.ch/grid/etc/grid-security/certificates'
 os.environ['X509_VOMS_DIR'] = '/cvmfs/cms.cern.ch/grid/etc/grid-security/vomsdir'
 ```
-The cell should be present in every exercise where you need the authentication.
+The cell should be present in every exercise where you need the authentication. We suggest to just replace the USER_PROXY line with the location you just copied your proxy to e.g. /eos/home-X/Y/ then save the notebook and go to the top of the notebook and click "KERNEL" -> "Restart and Run all". Do this in all of the exercise notebooks to get them to work.
 _REMEMBER_ to do this every day that you will try to access remote files in SWAN.
 
 
@@ -95,8 +95,8 @@ cd JMEDAS2023
 
 export SCRAM_ARCH=slc7_amd64_gcc700
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-scramv1 -n CMSSW10618_JMEDAS  CMSSW_10_6_18   ### choose an appropriate directory name instead of `CMSSW10618_JMEDAS`
-cd CMSSW10618_JMEDAS/src
+cmsrel CMSSW_10_6_18
+cd CMSSW_10_6_18/src/
 cmsenv
 
 git clone https://github.com/AndrissP/JMEDAS.git Analysis/JMEDAS
