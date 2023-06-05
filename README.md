@@ -19,7 +19,7 @@ A longer version of the slides is also provided [CMSDAS_Jets_intro_2023_longer.p
 - Mikael Myllymäki
 
 ## Mattermost channel
-link here
+[Jets & jet substructure short exercise channel](https://mattermost.web.cern.ch/cmsdascern2023/channels/jets--jet-substructure-short-exercise)
 
 ## Run exercises in SWAN
 This version of the same tutorial uses Jupyer Notebooks as a browser-based development environment at [CERN-SWAN](https://swan.cern.ch/) the content of these notebooks is the same as the one in lxplus, it is just a different set up.
