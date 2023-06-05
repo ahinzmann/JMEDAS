@@ -8,10 +8,6 @@ This tutorial is intended to provide you with the basic you need in order to dea
 This tutorial is designed to be executed as notebooks in SWAN. Also script based versions of the
 exercises are provided, which can be executed in lxplus.
 
-## Slides
-At the exercise session, we will cover the short version of the slides [CMSDAS_Jets_intro_2023.pdf](https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolLPC2023JetExercise/CMSDAS_Jets_intro_2023.pdf).
-A longer version of the slides is also provided [CMSDAS_Jets_intro_2023_longer.pdf](https://docs.google.com/presentation/d/1TKgKRX_BV885NoKyxCdbFZKEjYn_IG5TDsZp9IYgPQk/edit#slide=id.p1).
-
 
 ## Facilitators
 - Ashley Parker
@@ -19,7 +15,7 @@ A longer version of the slides is also provided [CMSDAS_Jets_intro_2023_longer.p
 - Mikael Myllymäki
 
 ## Mattermost channel
-link here
+[Jets & jet substructure short exercise channel](https://mattermost.web.cern.ch/cmsdascern2023/channels/jets--jet-substructure-short-exercise)
 
 ## Run exercises in SWAN
 This version of the same tutorial uses Jupyer Notebooks as a browser-based development environment at [CERN-SWAN](https://swan.cern.ch/) the content of these notebooks is the same as the one in lxplus, it is just a different set up.
