@@ -1,13 +1,14 @@
 # Jet CMS DAS Exercise
 
 ## CMS DAS October 2023
+
+TODAY we will do Exercise 6 on jet substructure
   
 ### Introduction
 This tutorial is intended to provide you with the basic you need in order to deal with jets in your analysis. We start with the basics of what is a jet, how are they reconstructed, what algorithms are used, etc. Then we give examples with scripts on how to access jets and use them in your analysis frameworks, including corrections and systematics. In the second part of the exercise, we examine jet substructure algorithms, which have many uses including identification of hadronic decays of heavy SM particles like top quarks, W, Z, and H bosons, as well as mitigation of pileup and others.
 
 This tutorial is designed to be executed as notebooks in SWAN. Also script based versions of the
 exercises are provided, which can be executed in lxplus.
-
 
 ## Facilitators
 - Polidamas Georgios Kosmoglou Kioseoglou
@@ -56,6 +57,9 @@ The previous steps you have to do it once. Additionally, two important things:
 ## Grid certificate
 
 To access data stored remotely in different places, you need to set your grid certificate. 
+
+In case you have problems with the grid certificate setup, you can copy the root files produced in the first step of exercise 6 from this location (adapt to your own username etc):
+scp "school14@naf-cms.desy.de:/nfs/dust/cms/group/cmsdas2023/POG-Jet/substructure/*.root"  /eos/user/h/hinzmann/SWAN_projects/CMSDAS_jetExercise/files/
 
  * *For runing on *lxplus*, you only need to run (to get a valid certificate):
 ```bash
