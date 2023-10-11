@@ -89,7 +89,7 @@ _REMEMBER_ to do this every day that you will try to access remote files in SWAN
 Once you've completed the setup instructions, change to the directory ```~/SWAN_projects/CMSDAS_jetExercise/DAS/``` in SWAN. Information on the separate tutorial can be found in the "notebooks" subdirectory.
 
 
-## Run exercises in lxplus
+## Run exercises in lxplus (DEPRECIATED FOR TODAY)
 
 Open a terminal/console, connect to lxplus and prepare your working area (instructions are in bash shell syntax):
 
